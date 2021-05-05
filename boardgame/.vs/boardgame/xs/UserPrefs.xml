@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{5D9A61A6-4B85-4203-DEEF-2177438ACE71}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../168 group project/Assets/Scripts/Colored.cs">
+    <Files>
+      <File FileName="Assets/GameControl.cs" Line="37" Column="64" />
+      <File FileName="../168 group project/Assets/Scripts/Colored.cs" Line="55" Column="21" />
+      <File FileName="Assets/FollowThePath.cs" Line="17" Column="40" />
+      <File FileName="Assets/Dice.cs" Line="1" Column="1" />
+      <File FileName="../168 group project/Assets/Scripts/Dice.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c6aad110-878d-4ff0-96aa-a5aa51648c6c" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
