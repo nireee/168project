@@ -5,11 +5,9 @@ public class Dice : MonoBehaviour {
 
     // Array of dice sides sprites to load from Resources folder
     private Sprite[] diceSides;
-
-
     // Reference to sprite renderer to change sprites
     private SpriteRenderer rend;
-
+    public int Side;
     public bool rolled = false;
 
     private bool coroutineAllowed = true;
@@ -59,7 +57,7 @@ public class Dice : MonoBehaviour {
         PlayerControl.finalSide = randomDiceSide + 1;
 
         PlayerControl.MovePlayer();
-
+        Side = PlayerControl.finalSide;
         // Show final dice value in Console
         Debug.Log(PlayerControl.finalSide);
         coroutineAllowed = true;

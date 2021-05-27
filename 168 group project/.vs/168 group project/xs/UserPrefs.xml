@@ -1,17 +1,16 @@
 ﻿<Properties StartupConfiguration="{1335E5EB-EAEE-5ECE-CE70-C72F96D52044}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../boardgame/Assets/GameControl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CharacterController.cs">
     <Files>
-      <File FileName="Assets/Scripts/Dice.cs" Line="1" Column="1" />
-      <File FileName="../boardgame/Assets/Dice.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Colored.cs" Line="49" Column="6" />
-      <File FileName="../boardgame/Assets/FollowThePath.cs" Line="38" Column="10" />
-      <File FileName="../boardgame/Assets/GameControl.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PlayerControl.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Dice.cs" Line="59" Column="9" />
+      <File FileName="Assets/Scripts/Colored.cs" Line="31" Column="27" />
+      <File FileName="Assets/Scripts/PlayerControl.cs" Line="38" Column="1" />
+      <File FileName="Assets/Scripts/InkPercentage.cs" Line="30" Column="14" />
+      <File FileName="Assets/Scripts/SpecialAbilities.cs" Line="7" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c6aad110-878d-4ff0-96aa-a5aa51648c6c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b6232526-5535-466f-b7a4-c7457d072f51" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
