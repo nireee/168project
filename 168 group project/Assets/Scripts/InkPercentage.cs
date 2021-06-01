@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class InkPercentage : MonoBehaviour
 {
     public Slider InkBar;
+    public Text percentage;
     public Dice dice;
     public int currentInk = 100;
     public GameObject[] map;
@@ -34,6 +35,7 @@ public class InkPercentage : MonoBehaviour
             ChangeInk();
         }
         InkBar.value = currentInk;
+        percentage.text = currentInk + "%";
     }
 
     public void ChangeInk()

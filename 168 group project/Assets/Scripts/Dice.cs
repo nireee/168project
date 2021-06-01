@@ -3,16 +3,14 @@ using UnityEngine;
 
 public class Dice : MonoBehaviour {
 
-    // Array of dice sides sprites to load from Resources folder
+    public GameObject[] player;
     private Sprite[] diceSides;
-    // Reference to sprite renderer to change sprites
     private SpriteRenderer rend;
     public int Side;
+    public int Turns;
     public bool rolled = false;
-
     private bool coroutineAllowed = true;
 
-    // Use this for initialization
     public void Start () {
 
         // Assign Renderer component
@@ -55,8 +53,31 @@ public class Dice : MonoBehaviour {
         // Assigning final side so you can use this value later in your game
         // for player movement for example
         PlayerControl.finalSide = randomDiceSide + 1;
-
         PlayerControl.MovePlayer();
+
+        //Turns = 0;
+        //if(Turns == 0)
+        //{
+        //    PlayerControl.MovePlayer(1);
+        //}
+        //else if(Turns == 1)
+        //{
+        //    PlayerControl.MovePlayer(2);
+        //}
+        //else if (Turns == 2)
+        //{
+        //    PlayerControl.MovePlayer(3);
+        //}
+        //else if (Turns == 3)
+        //{
+        //    PlayerControl.MovePlayer(4);
+        //}
+        //else
+        //{
+        //    if(Turns > 3) Turns = 0;
+        //}
+        //Turns += 1;
+
         Side = PlayerControl.finalSide;
         // Show final dice value in Console
         Debug.Log(PlayerControl.finalSide);

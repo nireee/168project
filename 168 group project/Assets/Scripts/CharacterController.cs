@@ -12,17 +12,18 @@ public class CharacterController : MonoBehaviour
     public Color Inkcolor;
     public GameObject[] map;
     public int ink_amount;
-    private InkPercentage ink;
+    public InkPercentage ink;
     public bool move = false; //for one player currently
 
     void Start()
     {
-        ink_amount = ink.currentInk;
+        
     }
 
 
     public void Update()
     {
+        ink_amount = ink.currentInk;
         if (move)
         {
             print("dice rolled");

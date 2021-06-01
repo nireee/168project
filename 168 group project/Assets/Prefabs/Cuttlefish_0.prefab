@@ -246,4 +246,5 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  ink_amount: 0
   move: 0
