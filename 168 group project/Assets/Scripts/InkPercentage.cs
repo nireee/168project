@@ -8,56 +8,49 @@ public class InkPercentage : MonoBehaviour
     public Slider InkBar;
     public Text percentage;
     public Dice dice;
-    public int currentInk = 100;
+    public int currentInk;
     public GameObject[] map;
     public CharacterController player;
-    public int cur_index;
-    public float spend_rate = 1f;
-    public float replenish_rate = 1f;
-    // Start is called before the first frame update
+    public float spend_rate = 2f;
+    public float replenish_rate = 2f;
+
     void Start()
     {
         InkBar = GetComponent<Slider>();
+        currentInk = 100;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (player.move == true)
-        {
-            cur_index += dice.Side;
-            if (cur_index > map.Length)
-            {
-                cur_index -= map.Length;
-            }
-            print(cur_index);
-            print(map[cur_index].GetComponent<SpriteRenderer>().color);
-            ChangeInk();
-        }
         InkBar.value = currentInk;
         percentage.text = currentInk + "%";
     }
 
     public void ChangeInk()
     {
-        if (map[cur_index].GetComponent<SpriteRenderer>().color == player.Inkcolor)
+        Debug.Log(player.area_index);
+        if (map[player.area_index].GetComponent<SpriteRenderer>().color == player.Inkcolor)
         {
-            currentInk += 6 * (int)replenish_rate;
+            Debug.Log("replenish");
+            currentInk += 2 * (int)replenish_rate;
         }
-        else if (map[cur_index].GetComponent<SpriteRenderer>().color == Color.white)
+        else if (map[player.area_index].GetComponent<SpriteRenderer>().color == Color.white)
         {
-            currentInk -= 3 * (int)spend_rate;
+            Debug.Log("color white");
+            currentInk -= 1 * (int)spend_rate;
         }
         else
         {
-            currentInk -= 6 * (int)spend_rate;
+            Debug.Log("step on others");
+            currentInk -= 2 * (int)spend_rate;
         }
         if (currentInk > 100)
         {
             currentInk = 100;
         }
-    }
-
-    
-    
+        if(currentInk < 0)
+        {
+            currentInk = 0;
+        }
+    }  
 }

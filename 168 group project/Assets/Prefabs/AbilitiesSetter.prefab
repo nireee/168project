@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1590716210218653674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1590716210218653672}
+  - component: {fileID: 1590716210218653675}
+  m_Layer: 0
+  m_Name: AbilitiesSetter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1590716210218653672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590716210218653674}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1590716210218653675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590716210218653674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef0c122a041ed47b8bdccd1a0677a0b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num_to_set: 5
+  abilities:
+  - {fileID: 8768789588882336207, guid: 99658982fb64a4ed9b4f2ab44c71438d, type: 3}
+  - {fileID: 8349578927477423174, guid: d1e4fe49b30bf484c88f1db83909dae7, type: 3}
+  - {fileID: 5205856564740515578, guid: 0c7d68372ec904f6c864323463503829, type: 3}
+  - {fileID: 5204043227199890780, guid: 2d1ab2f70023149fdbba0f9beef047cf, type: 3}
+  - {fileID: 6675197997868507619, guid: cfe6bfddd01974c2c8c1813492d5ae2f, type: 3}
+  - {fileID: 4954395993419226449, guid: f0132b4d541ca4e2f8dbe968248324d5, type: 3}
+  - {fileID: 9180398467462611587, guid: d7d322108e49b41e7bc616afabb3aa67, type: 3}
+  - {fileID: 1413181793084413566, guid: 179c9acc9385c4d7e8947f722acd1d75, type: 3}
+  areas:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  ability_exist: 0
+  current_num_abilities: 0
+  players:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  index: 
+  DisplayedAbilities: []
+  random_pos: 0

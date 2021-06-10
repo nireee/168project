@@ -1,16 +1,18 @@
 ﻿<Properties StartupConfiguration="{1335E5EB-EAEE-5ECE-CE70-C72F96D52044}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Dice.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerControl.cs">
     <Files>
-      <File FileName="Assets/Scripts/SpecialAbilities.cs" Line="59" Column="1" />
-      <File FileName="Assets/Scripts/Dice.cs" Line="60" Column="12" />
-      <File FileName="Assets/Scripts/PlayerControl.cs" Line="28" Column="35" />
-      <File FileName="Assets/Scripts/InkPercentage.cs" Line="38" Column="44" />
-      <File FileName="Assets/Scripts/CharacterController.cs" Line="26" Column="37" />
+      <File FileName="Assets/Scripts/PlayerControl.cs" Line="111" Column="31" IsPinned="True" />
+      <File FileName="Assets/Scripts/Dice.cs" Line="14" Column="27" />
+      <File FileName="Assets/Scripts/AbilitiesSetter.cs" Line="16" Column="33" />
+      <File FileName="Assets/Scripts/MainMenu.cs" Line="18" Column="78" />
+      <File FileName="Assets/Scripts/InkPercentage.cs" Line="15" Column="36" />
+      <File FileName="Assets/Scripts/SpecialAbilities.cs" Line="51" Column="46" />
+      <File FileName="Assets/Scripts/CharacterController.cs" Line="57" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="37d60212-07fe-4717-9364-8201d95278da" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fb85537e-9472-4bd6-9419-36c92cfccfca" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

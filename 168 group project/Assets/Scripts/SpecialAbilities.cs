@@ -4,82 +4,79 @@ using UnityEngine;
 
 public class SpecialAbilities : MonoBehaviour
 {
-    public CharacterController player;
-    public InkPercentage ink_value;
+    public CharacterController[] players;
+    public InkPercentage[] ink_value;
+    public AbilitiesSetter ab;
     public Dice dice;
     public GameObject[] map;
-    public CharacterController enemy;
+    public GameObject[] abilities;
+    public int PlayerIndex;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     public void Inkpot()
     {
-        ink_value.currentInk += 10;
+        GoBackToDefault();
+        ink_value[PlayerIndex].currentInk += 10;
+        if(ink_value[PlayerIndex].currentInk >= 100)
+        {
+            ink_value[PlayerIndex].currentInk = 100;
+        }
+        Debug.Log("Inkpot");
+    }
+
+    public void LoseInk()
+    {
+        GoBackToDefault();
+        ink_value[PlayerIndex].currentInk -= 10;
+        if (ink_value[PlayerIndex].currentInk >= 100)
+        {
+            ink_value[PlayerIndex].currentInk = 100;
+        }
+        Debug.Log("LoseInk");
     }
 
     public void Blast()
     {
-        player.ChangeColor(player.area_index + 1);
-        player.ChangeColor(player.area_index - 1);
+        GoBackToDefault();
+        SpriteRenderer sr1 = map[players[PlayerIndex].area_index + 1].GetComponent<SpriteRenderer>();
+        sr1.color = players[PlayerIndex].Inkcolor;
+        SpriteRenderer sr2 = map[players[PlayerIndex].area_index - 1].GetComponent<SpriteRenderer>();
+        sr2.color = players[PlayerIndex].Inkcolor;
+        Debug.Log("Blast");
     }
 
     public void Overuse()
     {
-        ink_value.spend_rate = 2f;
+        GoBackToDefault();
+        ink_value[PlayerIndex].spend_rate = 4f;
+        Debug.Log("Overuse");
     }
 
     public void Conserve()
     {
-        ink_value.spend_rate = 0.5f;
-    }
-
-    public void Turn()
-    {
-        player.dice.Side = -player.dice.Side;
-    }
-
-    public void Freeze()
-    {
-        player.move = false;
-    }
-
-    public void FiftyFifty()
-    {
-        //not completed
-        int ink_t = (enemy.ink_amount + player.ink_amount) / 2;
-        enemy.ink_amount = ink_t;
-        player.ink_amount = ink_t;
+        GoBackToDefault();
+        ink_value[PlayerIndex].spend_rate = 1f;
+        Debug.Log("Conserve");
     }
 
     public void Lucky()
     {
-        ink_value.replenish_rate = 2f;
+        GoBackToDefault();
+        ink_value[PlayerIndex].replenish_rate = 4f;
+        Debug.Log("Lucky");
     }
 
     public void UnLucky()
     {
-        ink_value.replenish_rate = 0.5f;
+        GoBackToDefault();
+        ink_value[PlayerIndex].replenish_rate = 1f;
+        Debug.Log("UnLucky");
     }
 
-    public void Friendship()
+    public void GoBackToDefault()
     {
-        ink_value.spend_rate = 0f;
-        ink_value.replenish_rate = 0.5f;
+        PlayerIndex = ab.player_index;
+        ink_value[PlayerIndex].replenish_rate = 2f;
+        ink_value[PlayerIndex].spend_rate = 2f;
     }
-
-    public void Stimulant()
-    {
-        //not completed
-    }
-
 }

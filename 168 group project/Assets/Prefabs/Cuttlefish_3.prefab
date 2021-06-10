@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 7677031289458791508}
   - component: {fileID: 1793670803964581962}
   - component: {fileID: 1648858904422865709}
+  - component: {fileID: 7493566404474973509}
   m_Layer: 0
   m_Name: Cuttlefish_3
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 7677031289458791509}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.79, y: -1.31, z: 0}
-  m_LocalScale: {x: 0.5006583, y: 0.5006583, z: 0.5006583}
+  m_LocalScale: {x: 0.45383644, y: 0.45383644, z: 0.45383644}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 0
   m_Sprite: {fileID: -847199538864428441, guid: 47d8e800cdc254c9ba1466f8cf0b1b1b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -240,4 +241,70 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   ink_amount: 0
+  ink: {fileID: 0}
   move: 0
+  random_index_list: 
+  random_index_position: 0
+  random_index_abilities: 0
+  abilities_exist: 0
+--- !u!114 &7493566404474973509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7677031289458791509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a2c5ebac1c0a4230bde6137b024c2c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  players: []
+  ink_value:
+  - {fileID: 0}
+  ab: {fileID: 0}
+  dice: {fileID: 0}
+  map:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  abilities:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  PlayerIndex: 0
+  skip: 0

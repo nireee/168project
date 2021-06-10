@@ -11,12 +11,18 @@ public class CharacterController : MonoBehaviour
     public GameObject player;
     public Color Inkcolor;
     public GameObject[] map;
-    public int ink_amount;
+    public int ink_amount = 100;
     public InkPercentage ink;
-    public bool move = false; //for one player currently
+    public bool move = false;
+
+    public int[] random_index_list;
+    public int random_index_position;
+    public int random_index_abilities;
+    public bool abilities_exist;
 
     void Start()
     {
+        move = false;
         
     }
 
@@ -29,11 +35,10 @@ public class CharacterController : MonoBehaviour
             print("dice rolled");
             area_index += dice.Side;
             Move();
+            ink.ChangeInk();
             ChangeColor(area_index);
         }
         move = false;
-        
-        
     }
 
     public void Move()
@@ -41,6 +46,10 @@ public class CharacterController : MonoBehaviour
         if (area_index > areas.Length - 1)
         {
             area_index -= areas.Length;
+        }
+        if(area_index < 0)
+        {
+            area_index = areas.Length - Mathf.Abs(area_index);
         }
         TargetPos = new Vector2(areas[area_index].transform.position.x, areas[area_index].transform.position.y);
         print("TargetPos:"+ TargetPos);
@@ -54,9 +63,8 @@ public class CharacterController : MonoBehaviour
     {
         SpriteRenderer sr = map[index].GetComponent<SpriteRenderer>();
         sr.color = Inkcolor;
-        print("Colorchanged");
+        
     }
 
-    
-    
+
 }
