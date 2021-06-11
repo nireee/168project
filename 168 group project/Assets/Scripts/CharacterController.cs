@@ -15,11 +15,6 @@ public class CharacterController : MonoBehaviour
     public InkPercentage ink;
     public bool move = false;
 
-    public int[] random_index_list;
-    public int random_index_position;
-    public int random_index_abilities;
-    public bool abilities_exist;
-
     void Start()
     {
         move = false;

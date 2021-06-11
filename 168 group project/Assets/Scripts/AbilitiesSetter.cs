@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class AbilitiesSetter : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class AbilitiesSetter : MonoBehaviour
     public SpecialAbilities sa;
     public int Abilities_index;
     public int player_index;
+
 
     void Start()
     {
@@ -81,7 +83,6 @@ public class AbilitiesSetter : MonoBehaviour
         }
 
     }
-
     public void ChooseAbility()
     {
         if (Abilities_index == 0)

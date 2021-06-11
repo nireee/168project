@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{1335E5EB-EAEE-5ECE-CE70-C72F96D52044}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerControl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainMenu.cs">
     <Files>
       <File FileName="Assets/Scripts/PlayerControl.cs" Line="111" Column="31" IsPinned="True" />
-      <File FileName="Assets/Scripts/Dice.cs" Line="14" Column="27" />
-      <File FileName="Assets/Scripts/AbilitiesSetter.cs" Line="16" Column="33" />
-      <File FileName="Assets/Scripts/MainMenu.cs" Line="18" Column="78" />
-      <File FileName="Assets/Scripts/InkPercentage.cs" Line="15" Column="36" />
-      <File FileName="Assets/Scripts/SpecialAbilities.cs" Line="51" Column="46" />
-      <File FileName="Assets/Scripts/CharacterController.cs" Line="57" Column="1" />
+      <File FileName="Assets/Scripts/Dice.cs" />
+      <File FileName="Assets/Scripts/AbilitiesSetter.cs" />
+      <File FileName="Assets/Scripts/MainMenu.cs" Line="26" Column="1" />
+      <File FileName="Assets/Scripts/InkPercentage.cs" />
+      <File FileName="Assets/Scripts/SpecialAbilities.cs" />
+      <File FileName="Assets/Scripts/CharacterController.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using TMPro;
 public class PlayerControl : MonoBehaviour
 {
 
     public static GameObject player1, player2, player3, player4;
     public static int player_start_index = 0;
     public static int finalSide = 0;
-    public TextMeshProUGUI win;
-    public TextMeshProUGUI area_count;
+    public Text win;
+    public Text area_count;
     public string winner;
     public bool GameOver = false;
     public AbilitiesSetter ABS;
@@ -20,7 +19,7 @@ public class PlayerControl : MonoBehaviour
     public CharacterController[] players;
     public int[] areas_captured;
     public GameObject Status;
-    private IEnumerator coroutine;
+    public GameObject Menu;
     void Start()
     {
         player1 = GameObject.Find("Cuttlefish_0");
@@ -108,6 +107,7 @@ public class PlayerControl : MonoBehaviour
         area_count.text = "Player 1 :" + player1.GetComponent<CharacterController>().ink_amount + "% " + "Player 2 :" + player2.GetComponent<CharacterController>().ink_amount + "% " + "Player 3 :" + player3.GetComponent<CharacterController>().ink_amount + "% " + "Player 4 :" + player4.GetComponent<CharacterController>().ink_amount + "%";
         win.text = winner + " WINS!";
         Status.SetActive(false);
+        Menu.SetActive(false);
         Panel.SetActive(true);
         StartCoroutine(ChangeAfter15SecondsCoroutine());
         

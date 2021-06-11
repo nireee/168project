@@ -48,35 +48,35 @@ public class SpecialAbilities : MonoBehaviour
     public void Overuse()
     {
         GoBackToDefault();
-        ink_value[PlayerIndex].spend_rate = 4f;
+        ink_value[PlayerIndex].spend_rate = 4.0f;
         Debug.Log("Overuse");
     }
 
     public void Conserve()
     {
         GoBackToDefault();
-        ink_value[PlayerIndex].spend_rate = 1f;
+        ink_value[PlayerIndex].spend_rate = 1.0f;
         Debug.Log("Conserve");
     }
 
     public void Lucky()
     {
         GoBackToDefault();
-        ink_value[PlayerIndex].replenish_rate = 4f;
+        ink_value[PlayerIndex].replenish_rate = 4.0f;
         Debug.Log("Lucky");
     }
 
     public void UnLucky()
     {
         GoBackToDefault();
-        ink_value[PlayerIndex].replenish_rate = 1f;
+        ink_value[PlayerIndex].replenish_rate = 1.0f;
         Debug.Log("UnLucky");
     }
 
     public void GoBackToDefault()
     {
         PlayerIndex = ab.player_index;
-        ink_value[PlayerIndex].replenish_rate = 2f;
-        ink_value[PlayerIndex].spend_rate = 2f;
+        ink_value[PlayerIndex].replenish_rate = 2.0f;
+        ink_value[PlayerIndex].spend_rate = 2.0f;
     }
 }
